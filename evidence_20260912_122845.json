@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-09-12T12:28:45.951792",
+  "risk_score": 0.641,
+  "stage": "Emotional Manipulation",
+  "conversation": [
+    {
+      "sender": "child",
+      "role": "child",
+      "text": "Hi",
+      "score": 0.0,
+      "raw_score": 0.585,
+      "flags": [],
+      "breakdown": {
+        "text_score": 0.7318,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:28:08.906846"
+    },
+    {
+      "sender": "predator",
+      "role": "predator",
+      "text": "Hi",
+      "score": 0.0,
+      "raw_score": 0.585,
+      "flags": [],
+      "breakdown": {
+        "text_score": 0.7318,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:28:10.943586"
+    },
+    {
+      "sender": "predator",
+      "role": "predator",
+      "text": "are you alone",
+      "score": 0.781,
+      "raw_score": 0.781,
+      "flags": [
+        "Suspicious language",
+        "High risk content"
+      ],
+      "breakdown": {
+        "text_score": 0.9765,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:28:34.054320"
+    },
+    {
+      "sender": "child",
+      "role": "child",
+      "text": "yes",
+      "score": 0.693,
+      "raw_score": 0.693,
+      "flags": [],
+      "breakdown": {
+        "text_score": 0.8662,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:28:36.742140"
+    },
+    {
+      "sender": "predator",
+      "role": "predator",
+      "text": "don't tell anyone",
+      "score": 0.762,
+      "raw_score": 0.762,
+      "flags": [
+        "Suspicious language",
+        "High risk content"
+      ],
+      "breakdown": {
+        "text_score": 0.9522,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:28:45.950921"
+    }
+  ],
+  "flagged_messages": [
+    {
+      "sender": "predator",
+      "role": "predator",
+      "text": "are you alone",
+      "score": 0.781,
+      "raw_score": 0.781,
+      "flags": [
+        "Suspicious language",
+        "High risk content"
+      ],
+      "breakdown": {
+        "text_score": 0.9765,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:28:34.054320",
+      "room_risk": 0.521,
+      "stage": "Isolation & Trust Building"
+    },
+    {
+      "sender": "predator",
+      "role": "predator",
+      "text": "don't tell anyone",
+      "score": 0.762,
+      "raw_score": 0.762,
+      "flags": [
+        "Suspicious language",
+        "High risk content"
+      ],
+      "breakdown": {
+        "text_score": 0.9522,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:28:45.950921",
+      "room_risk": 0.641,
+      "stage": "Emotional Manipulation"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-09-12T12:05:26.628341",
+  "risk_score": 0.638,
+  "stage": "Emotional Manipulation",
+  "conversation": [
+    {
+      "sender": "child",
+      "role": "child",
+      "text": "Hi",
+      "score": 0.0,
+      "raw_score": 0.585,
+      "flags": [],
+      "breakdown": {
+        "text_score": 0.7318,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:04:59.234713"
+    },
+    {
+      "sender": "predator",
+      "role": "predator",
+      "text": "Hi",
+      "score": 0.0,
+      "raw_score": 0.585,
+      "flags": [],
+      "breakdown": {
+        "text_score": 0.7318,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:05:03.789359"
+    },
+    {
+      "sender": "predator",
+      "role": "predator",
+      "text": "are you alone",
+      "score": 0.781,
+      "raw_score": 0.781,
+      "flags": [
+        "Suspicious language",
+        "High risk content"
+      ],
+      "breakdown": {
+        "text_score": 0.9765,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:05:11.686111"
+    },
+    {
+      "sender": "child",
+      "role": "child",
+      "text": "yes",
+      "score": 0.693,
+      "raw_score": 0.693,
+      "flags": [],
+      "breakdown": {
+        "text_score": 0.8662,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:05:19.723388"
+    },
+    {
+      "sender": "predator",
+      "role": "predator",
+      "text": "I'm coming to your house",
+      "score": 0.755,
+      "raw_score": 0.755,
+      "flags": [
+        "Suspicious language",
+        "High risk content"
+      ],
+      "breakdown": {
+        "text_score": 0.9442,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:05:26.627848"
+    }
+  ],
+  "flagged_messages": [
+    {
+      "sender": "predator",
+      "role": "predator",
+      "text": "are you alone",
+      "score": 0.781,
+      "raw_score": 0.781,
+      "flags": [
+        "Suspicious language",
+        "High risk content"
+      ],
+      "breakdown": {
+        "text_score": 0.9765,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:05:11.686111",
+      "room_risk": 0.521,
+      "stage": "Isolation & Trust Building"
+    },
+    {
+      "sender": "predator",
+      "role": "predator",
+      "text": "I'm coming to your house",
+      "score": 0.755,
+      "raw_score": 0.755,
+      "flags": [
+        "Suspicious language",
+        "High risk content"
+      ],
+      "breakdown": {
+        "text_score": 0.9442,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T12:05:26.627848",
+      "room_risk": 0.638,
+      "stage": "Emotional Manipulation"
+    }
+  ]
+}

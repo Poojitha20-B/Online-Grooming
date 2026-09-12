@@ -30,7 +30,7 @@ GROQ_API_KEY  = os.environ.get("GROQ_API_KEY",  "")
 SECRET_KEY    = os.environ.get("SECRET_KEY",    "safeguard-dev-secret")
 
 GROQ_API_URL  = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL    = "llama-3.3-70b-versatile"
+GROQ_MODEL    = "openai/gpt-oss-120b"
 
 _missing = []
 if not GROQ_API_KEY:   _missing.append("GROQ_API_KEY  (required — AI sandbox won't work)")
@@ -211,26 +211,41 @@ def call_groq(system, user_msg):
     if not GROQ_API_KEY:
         print("[GROQ] Skipped — GROQ_API_KEY not set in .env")
         return None
+
     try:
         resp = requests.post(
             GROQ_API_URL,
-            headers={"Authorization": f"Bearer {GROQ_API_KEY}", "Content-Type": "application/json"},
+            headers={
+                "Authorization": f"Bearer {GROQ_API_KEY}",
+                "Content-Type": "application/json"
+            },
             json={
-                "model":       GROQ_MODEL,
-                "max_tokens":  80,
+                "model": GROQ_MODEL,
+                "max_tokens": 80,
                 "temperature": 0.75,
                 "messages": [
                     {"role": "system", "content": system},
-                    {"role": "user",   "content": user_msg},
+                    {"role": "user", "content": user_msg},
                 ],
             },
             timeout=10,
         )
-        reply = resp.json()["choices"][0]["message"]["content"].strip()
+
+        print("[GROQ STATUS]", resp.status_code)
+        print("[GROQ RESPONSE]", resp.text)
+
+        data = resp.json()
+
+        if "choices" not in data:
+            print("[GROQ ERROR RESPONSE]", data)
+            return None
+
+        reply = data["choices"][0]["message"]["content"].strip()
         print(f"[GROQ] {reply}")
         return reply
+
     except Exception as e:
-        print(f"[GROQ ERROR] {e}")
+        print(f"[GROQ ERROR] {repr(e)}")
         return None
 
 

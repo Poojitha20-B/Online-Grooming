@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-09-12T11:17:58.387237",
+  "risk_score": 0.663,
+  "stage": "Emotional Manipulation",
+  "conversation": [
+    {
+      "sender": "rachana",
+      "role": "predator",
+      "text": "heyy",
+      "score": 0.663,
+      "raw_score": 0.663,
+      "flags": [],
+      "breakdown": {
+        "text_score": 0.8292,
+        "emoji_score": 0.0,
+        "image_score": 0.0
+      },
+      "ts": "2026-09-12T11:17:58.385926"
+    }
+  ],
+  "flagged_messages": []
+}
